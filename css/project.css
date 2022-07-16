@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;400&family=EB+Garamond&display=swap');
+body::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */ /* creates padding around scroll thumb */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  max-width: 1300px;
+  font-family: "Albert Sans", sans-serif;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cta-next {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  margin-block: 2rem 5rem;
+}
+
+.cta-next a {
+  max-width: 50%;
+  text-decoration: none;
+  color: black;
+  font-size: clamp(0.9rem, 2.5vw, 1.8rem);
+}
+
+.social-img{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.social-img img{
+margin: auto;
+}
+
+
+.nav {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  position: sticky;
+  z-index: 99;
+  padding-block: 1rem;
+  top: 0;
+  justify-content: space-between;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: bold;
+}
+
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+.header div{
+  width: 60%;
+}
+
+.header h1{
+  width: 30%;
+}
+
+
+.project-title {
+  font-size: clamp(2.8rem, 1vw, 5rem);
+  animation: fadeIn 1s;
+
+}
+
+.fadein-subtitle {
+  animation: fadeIn 2s;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  width: 95%;
+  font-family: "EB Garamond", serif;
+  font-weight: 300;
+
+  margin-bottom: 5rem;
+}
+
+.fadein-subtitle h3{
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: bold;
+    font-size: clamp(1.3rem, 1.5vw, 1.7rem);
+}
+
+.fadein-subtitle p{
+    opacity: .8;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+
+/* .project-img{
+  grid-template-columns: repeat(auto-fit, minmax(2000px, 1fr));
+} */
+
+.project-img img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  animation: fadeIn 2.5s;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.project-img img:hover {
+  box-shadow: 1px 1px black, 2px 2px black, 3px 3px black;
+  -webkit-transform: translateX(-6px);
+  transform: translateX(-6px);
+  
+}
+
+@media screen and (max-width: 768px){
+  .header{
+      display: block;
+  }
+
+  .header div, .header h1{
+      width: 95%;
+  }
+
+
+}
+

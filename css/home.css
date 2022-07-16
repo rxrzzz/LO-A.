@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;400&family=EB+Garamond&display=swap');
+body::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */ /* creates padding around scroll thumb */
+}
+
+body {
+  /* padding: 0;
+  margin: 0;
+  background-color: #ffffff; */
+  font-family: "Albert Sans", sans-serif;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  position: sticky;
+  z-index: 99;
+  padding-block: 1rem;
+  background-color: #ffffff;
+  top: 0;
+  justify-content: space-between;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: bold;
+}
+.wrapper {
+  width: 95%;
+  max-width: 1370px;
+  margin: auto;
+  text-align: left;
+}
+
+.main-content div h1 {
+  font-size: clamp(2.8rem, 1vw, 5rem);
+}
+
+.main-content div h2 {
+  font-family: "EB Garamond", serif;
+  font-weight: 100;
+  font-size: clamp(1.3rem, 1.5vw, 1.7rem);
+  opacity: 0.8;
+}
+
+.main-content div {
+  max-width: 500px;
+}
+
+.main-content {
+  margin-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(90vh - 40px);
+}
+
+.main-content img {
+  width: 35%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.buttons, .socials{
+  flex-wrap: wrap;
+  display: flex;
+  margin-block: 1.2rem;
+}
+
+.buttons a, .socials a{
+  margin-right: 30px;
+  margin-block: 8px;
+  text-decoration: none;
+  color: black;
+  font-size: clamp(1.3rem, 1.5vw, 1.7rem);
+  font-weight: bold;
+}
+
+.socials a img{
+  width: 25px;
+}
+
+@media screen and (max-width: 780px) {
+  .main-content {
+    display: block;
+  }
+
+  .main-content img {
+    width: 100%;
+    margin-top: 3rem;
+    margin: auto;
+  }
+}
