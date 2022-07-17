@@ -113,25 +113,27 @@ margin: auto;
   margin-bottom: 5rem;
 }
 
+.a-left{
+  text-align: left;
+}
+
 .fadein-subtitle h3{
     display: inline-block;
     margin-bottom: .5rem;
     font-family: "Albert Sans", sans-serif;
     font-weight: bold;
-    font-size: clamp(1.3rem, 1.5vw, 1.7rem);
+    font-size: clamp(1.5rem, 1.7vw, 1.9rem);
 }
 
 .fadein-subtitle p{
     opacity: .8;
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-size: clamp(1.3rem, 1.5vw, 1.7rem);
 }
 
-/* .project-img{
-  grid-template-columns: repeat(auto-fit, minmax(2000px, 1fr));
-} */
 
 .project-img img {
   width: 100%;
+  margin: auto;
   object-fit: contain;
   margin-bottom: 1rem;
   border: 1px solid black;

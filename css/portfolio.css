@@ -32,12 +32,11 @@ body::-webkit-scrollbar {
     }
   }
 
-  .wrapper{
+  .wrapper {
+    width: 95%;
+    max-width: 1500px;
     margin: auto;
-    margin-block: 3rem;
-    max-width: 1400px;
-    width: 90%;
-    font-family: 'Albert Sans', sans-serif;    
+    text-align: left;
   }
 
   .redwire-header, .famasi-header{
@@ -48,6 +47,7 @@ body::-webkit-scrollbar {
   .redwire-header div, .famasi-header div{
     width: 60%;
   }
+
   .project-title {
     font-size: clamp(2.8rem, 1vw, 5rem);
     margin-block: 1rem;
@@ -270,7 +270,6 @@ color: #2D5B2C;
     position: sticky;
     z-index: 99;
     padding-block: 1rem;
-    background-color: #ffffff;
     top: 0;
     justify-content: space-between;
   }
