@@ -44,16 +44,15 @@ body {
   max-width: 50%;
   text-decoration: none;
   color: black;
-  font-size: clamp(0.9rem, 2.5vw, 1.8rem);
+  font-size: clamp(1.1rem, 1.3vw, 1.5rem);
 }
 
 .social-img{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    place-items: center;
-    align-items: center;
-    justify-items: center;
+  align-content: flex-start;
+
 }
 
 .social-img img{
@@ -146,6 +145,15 @@ margin: auto;
   -webkit-transform: translateX(-6px);
   transform: translateX(-6px);
   
+}
+
+.seemore-cta{
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  font-family: "EB Garamond", serif;
+  font-size: clamp(1.3rem, 1.5vw, 1.7rem);
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px){
