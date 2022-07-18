@@ -135,7 +135,7 @@ body::-webkit-scrollbar {
     transition: opacity .3s;
 }
 .one .project-description{
-    background-color: #FFFFFF;
+    background-color: #E9ACB3;
     color: #c9333f;
 }
 
@@ -148,8 +148,8 @@ body::-webkit-scrollbar {
 }
 
 .four .project-description {
-    background-color: #c9333f;
-    color: #e4c380;
+    background-color: #F3B700;
+    color: #d60d05;
 }
 
 .five .project-description{
@@ -158,7 +158,8 @@ body::-webkit-scrollbar {
 }
 
 .six .project-description{
-    background-color: #D2DCE8;
+    background-color: #e6d1d0;
+    color: #d60d05;
 }
 
 .seven .project-description{
@@ -167,7 +168,7 @@ body::-webkit-scrollbar {
 }
 
 .eight .project-description{
-    background-color: #D2AE36;
+    background-color: #f3b700;
 }
 
 .nine .project-description{
@@ -176,16 +177,18 @@ body::-webkit-scrollbar {
 }
 
 .ten .project-description{
-background-color: #FAA41A;
-color: #2D5B2C;
-}
-
-.eleven .project-description{
-
+color: #FAA41A;
+background-color: #2D5B2C;
 }
 
 .twelve .project-description{
+background-color: #1C3748;
+color: #c1ced1;
+}
 
+.eleven .project-description{
+background-color: #D6edf3;
+color: #01191e;
 }
 
 .one .project-description:hover,
@@ -211,7 +214,7 @@ color: #2D5B2C;
 }
 
 .one{
-    background-image: url(../images/sanaa/0002.jpg);
+    background-image: url(../images/sanaa/Sanaa.jpg);
 }
 
 .two{
@@ -228,17 +231,18 @@ color: #2D5B2C;
 }
 
 .four{
-    background-image: url(../images/edsg/img35.jpg);
+    background-image: url(../images/edsg/EDO\ V1.jpg);
     background-size: cover;
 }
 
 .five{
-    background-image: url(../images/brightfieldfarms/Brightfields\ Social\ Media\ Post\ \ .jpg);
+    background-image: url(../images/pd/Magazine\ .jpg);
+    background-size: cover;
 }
 
 .six{
-    background-image: url(../images/edsgpovertyanalysis/Poverty\ map\ report-\ Infographic_page-0004.jpg);
-    background-size: contain;
+    background-image: url(../images/pd/Infographic\ magazine.jpg);
+    background-size: cover;
 }
 
 .seven{
@@ -247,26 +251,30 @@ color: #2D5B2C;
 }
 
 .eight{
-    background-image: url(../images/pd/Personal\ Development\ \(Logo\ Design\)\ copy\ \(1\)_page-0010.jpg);
-    background-size: contain;
+    background-image: url(../images/pd/Nenegenic\ .jpg);
+    background-size: cover;
 }
 
 .nine{
-    background-image: url(../images/pd/Personal\ Development\ \(Logo\ Design\)\ copy\ \(1\)_page-0016.jpg);
-    background-size: contain;
+    background-image: url(../images/pd/GR\ media.jpg);
+    background-size: cover;
 }
 
 .ten{
-    background-image: url(../images/pd/Personal\ Development\ \(Logo\ Design\)\ copy\ \(1\)_page-0023.jpg);
+    background-image: url(../images/pd/Orangewold.jpg);
+    background-size: cover;
 }
 
 .eleven{
-
+background-image: url(../images/me/valentine\ postcard\ .jpg);
 }
 
 .twelve{
-    
+background-image: url(../images/famasi/Moodboard.jpg);
+background-size: cover;
 }
+
+
 
 .project-description h2{
     font-size: clamp(2.2rem, 1.8vw, 2.4rem);
