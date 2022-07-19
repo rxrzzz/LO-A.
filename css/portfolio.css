@@ -148,8 +148,8 @@ body::-webkit-scrollbar {
 }
 
 .four .project-description {
-    background-color: #F3B700;
-    color: #d60d05;
+    background-color: #B58517;
+    color: white;
 }
 
 .five .project-description{
@@ -226,8 +226,8 @@ color: #01191e;
 
 
 .three{
-    background-image: url(../images/famasi/_Brand\ guideline\ 1024_12.jpg);
-    background-size: 155%;
+    background-image: url(../images/famasi/Stationeries\ .jpg);
+    background-size: cover;
 }
 
 .four{

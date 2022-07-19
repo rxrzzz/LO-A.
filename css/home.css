@@ -79,7 +79,7 @@ body {
 
 .main-content img {
   width: 35%;
-  object-fit: cover;
+  object-fit: contain;
   filter: grayscale(100%);
 }
 

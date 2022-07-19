@@ -19,11 +19,12 @@ body {
 .wrapper {
   width: 80%;
   margin: auto;
-  padding: 2rem;
   max-width: 1300px;
   font-family: "Albert Sans", sans-serif;
 }
-
+.contact-me-p{
+  font-family: "EB Garamond", serif;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
