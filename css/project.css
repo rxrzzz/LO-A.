@@ -47,6 +47,53 @@ body {
   color: black;
   font-size: clamp(1.1rem, 1.3vw, 1.5rem);
 }
+@keyframes zoom {
+  from {
+      transform: scale(0);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+.closeBtn {
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 20px;
+  border: 2px solid black;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 99;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.closeBtn:hover {
+  color: rgb(255, 255, 255);
+}
+
+.modal {
+  width: 1005;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.733);
+  margin-top: -1px;
+  animation: zoom 0.3s ease-in-out;
+}
+
+.modal img {
+  width: 50%;
+  margin: auto;
+  object-fit: cover;
+}
 
 .social-img{
     display: grid;
@@ -164,6 +211,10 @@ margin: auto;
 
   .header div, .header h1{
       width: 95%;
+  }
+
+  .modal img{
+    width: 80%;
   }
 
 
