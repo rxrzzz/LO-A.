@@ -10,8 +10,8 @@ let imgModal = (src) => {
   closeBtn.setAttribute("class", "closeBtn");
   closeBtn.innerText = "X";
   closeBtn.onclick = () => {
+    modal.innerHTML = ""
     modal.remove();
-    modal.innerHTML = "<p></p>"
   };
   modal.append(newImage, closeBtn);
 };
