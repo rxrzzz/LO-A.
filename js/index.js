@@ -1,26 +1,24 @@
-const images = document.querySelectorAll('img')
+const images = document.querySelectorAll("img");
+const closeBtn = document.createElement("button");
+const modal = document.createElement("dialog");
 
 let imgModal = (src) => {
-    const modal = document.createElement("dialog")
-    modal.setAttribute("class", "modal")
-    document.querySelector("body").append(modal)
-    const newImage = document.createElement("img")
-    newImage.setAttribute("src", src)
-    const closeBtn = document.createElement("button");
-    closeBtn.setAttribute("class", "closeBtn");
-    closeBtn.innerText = "X"
-
-    modal.append(newImage)
-    closeBtn.addEventListener = ("click", () => {
-        modal.style.display = "none"
-    })
-    modal.append(closeBtn)
-}
+  modal.setAttribute("class", "modal");
+  document.querySelector("body").prepend(modal);
+  const newImage = document.createElement("img");
+  newImage.setAttribute("src", src);
+  closeBtn.setAttribute("class", "closeBtn");
+  closeBtn.innerText = "X";
+  closeBtn.onclick = () => {
+    modal.remove();
+    modal.innerHTML = "<p></p>"
+  };
+  modal.append(newImage, closeBtn);
+};
 
 images.forEach((img) => {
-    img.addEventListener("click", (e) => {
-        let imgSrc = e.target.src
-        imgModal(imgSrc)
-    })
-})
-
+  img.addEventListener("click", (e) => {
+    let imgSrc = e.target.src;
+    imgModal(imgSrc);
+  });
+});

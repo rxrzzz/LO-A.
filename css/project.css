@@ -59,15 +59,13 @@ body {
 .closeBtn {
   color: white;
   font-family: "Albert Sans", sans-serif;
-  cursor: pointer;
   background-color: transparent;
   font-size: 20px;
-  border: 2px solid black;
+  border: none;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 40px;
+  right: 40px;
   z-index: 99;
-  margin: 20px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
