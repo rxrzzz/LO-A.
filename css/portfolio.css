@@ -213,6 +213,16 @@ color: #01191e;
     
 }
 
+.contact{
+    color: black;
+    font-family: "EB Garamond", serif;
+}
+
+.contact a{
+    color: black;
+    font-weight: bold;
+}
+
 .one{
     background-image: url(../images/sanaa/Sanaa.jpg);
 }
