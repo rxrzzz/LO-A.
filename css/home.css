@@ -32,10 +32,9 @@ body {
 .nav {
   display: flex;
   width: 95%;
-  max-width: 1500px;
   margin: auto;
   position: sticky;
-  z-index: 99;
+  z-index: 80;
   padding-block: 1rem;
   top: 0;
   justify-content: space-between;
@@ -47,6 +46,7 @@ body {
   font-family: "Albert Sans", sans-serif;
   font-weight: bold;
 }
+
 .wrapper {
   width: 95%;
   max-width: 1500px;
