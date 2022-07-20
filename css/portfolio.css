@@ -19,6 +19,7 @@ body::-webkit-scrollbar {
   .wrapper {
     width: 95%;
     max-width: 1500px;
+    padding-top: 3rem;
     margin: auto;
     font-family: "Albert Sans", sans-serif;
   }
@@ -84,9 +85,9 @@ body::-webkit-scrollbar {
     border-bottom: 1px solid black;
   }
   
+  
 .redwire-wrapper, .famasi-wrapper{
     margin: auto;
-    margin-block: 3rem;
     animation: fadeIn 2s;
     max-width: 1400px;
     font-family: 'Albert Sans', sans-serif;
@@ -211,6 +212,7 @@ color: #01191e;
 .contact{
     color: black;
     font-family: "EB Garamond", serif;
+    margin-bottom: 3rem;
 }
 
 .contact a{
@@ -279,6 +281,14 @@ background-image: url(../images/famasi/Moodboard.jpg);
 background-size: cover;
 }
 
+.redwire-logo, .famasi-logo{
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.famasi-logo{
+    width: 250px;
+}
 
 
 .project-description h2{
@@ -319,7 +329,7 @@ background-size: cover;
     }
 
     .redwire-header div, .famasi-header div{
-        width: 95%;
+        width: 90%;
     }
 
     .mobile-description{
