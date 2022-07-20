@@ -67,10 +67,9 @@ body {
   right: 40px;
   z-index: 99;
   cursor: pointer;
+  filter: invert(100%);
 }
-.closeBtn:hover {
-  color: rgb(255, 255, 255);
-}
+
 
 .modal {
   position: fixed;
@@ -102,6 +101,7 @@ body {
 
 .social-img img{
 margin: auto;
+cursor: pointer;
 }
 
 
